@@ -1,0 +1,20 @@
+{
+  "name": "@protest-tracker/shared",
+  "private": true,
+  "description": "Shared code",
+  "version": "1.0.5",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "tsc": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "a7538ad71ba12be1d387a39da6b6a41a0d41ff73",
+  "license": "MIT",
+  "dependencies": {}
+}

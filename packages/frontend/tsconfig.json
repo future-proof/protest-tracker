@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.settings.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "lib",
+    "jsx": "react-jsx"
+  },
+  "references": [
+    { "path": "../shared" }
+  ],
+  "include": [
+    "src/**/*"
+  ]
+}

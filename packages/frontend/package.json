@@ -1,0 +1,38 @@
+{
+  "name": "@protest-tracker/frontend",
+  "private": true,
+  "description": "Frontend app",
+  "version": "1.0.5",
+  "scripts": {
+    "dev": "vite",
+    "tsc": "tsc -b tsconfig.json",
+    "build": "yarn tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@babel/core": "^7.0.0",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.3.1",
+    "@mui/material": "^5.3.1",
+    "@protest-tracker/shared": "^1.0.5",
+    "@types/hookrouter": "^2.2.5",
+    "axios": "^0.25.0",
+    "hookrouter": "^1.2.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.26.1"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "@vitejs/plugin-react": "^1.0.7",
+    "typescript": "^4.5.5",
+    "vite": "^2.7.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "a7538ad71ba12be1d387a39da6b6a41a0d41ff73",
+  "license": "MIT"
+}
