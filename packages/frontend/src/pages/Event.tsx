@@ -58,32 +58,37 @@ const Event: React.FC<{
         height: '400px',
         backgroundImage: `url(${event.images[0]})`,
         backgroundPosition: 'center',
+        marginBottom: '50px'
       }}>
 
       </Box>
       <Grid container spacing={3}>
         <Grid item xs={ 12 } sm={ 6 }>
           <Typography
-            sx={{
-              marginTop: '24px',
-              marginBottom: '24px',
-            }}
-          >
+            variant="h6"
+              sx={{
+                marginBottom: '24px',
+              }}
+            >
             { event.brief }
           </Typography>
-        </Grid>
-        <Grid item xs={ 12 } sm={ 6 }>
           <Typography
             sx={{
               marginTop: '24px',
-              marginBottom: '24px',
+              marginBottom: '24px'
             }}
           >
             { event.description }
           </Typography>
         </Grid>
         <Grid item xs={ 12 } sm={ 6 }>
-          <Typography>
+          <Typography
+            variant="h6"
+              sx={{
+                marginBottom: '24px',
+                textAlign: 'center'
+              }}
+          >
             Where is this protest happening?
           </Typography>
           <Box justifyContent="center" sx={{
