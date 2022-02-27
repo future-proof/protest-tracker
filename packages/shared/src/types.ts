@@ -37,6 +37,7 @@ export interface IEvent {
   id: string,
   name: string,
   location: ILocation,
+  date: date,
   brief: string,
   description: string,
   links: ILink[],

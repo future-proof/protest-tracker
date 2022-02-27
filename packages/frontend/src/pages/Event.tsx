@@ -45,6 +45,15 @@ const Event: React.FC<{
       >
         { event.name }
       </Typography>
+      <Typography
+        variant="h6"
+        sx={{
+          textAlign: 'center',
+          marginBottom: '24px',
+        }}
+      >
+        { event.date }
+      </Typography>
       <Box sx={{
         height: '400px',
         backgroundImage: `url(${event.images[0]})`,

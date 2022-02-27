@@ -12,6 +12,9 @@ import useEventData from '../hooks/useEventData'
 
 const Dashboard: React.FC = () => {
 
+
+  // We need to split this into upcoming events and past events.
+
   const data = useEventData()
   return (
     <Grid container spacing={3}>
@@ -33,6 +36,9 @@ const Dashboard: React.FC = () => {
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   { event.name}
+                </Typography>
+                <Typography gutterBottom variant="h8" component="div">
+                  { event.date}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   { event.brief }
