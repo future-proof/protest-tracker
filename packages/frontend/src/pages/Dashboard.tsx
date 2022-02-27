@@ -35,7 +35,7 @@ const Dashboard: React.FC = () => {
                   { event.name}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  { event.description }
+                  { event.brief }
                 </Typography>
               </CardContent>
               <CardActions>

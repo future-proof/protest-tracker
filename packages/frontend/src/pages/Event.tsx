@@ -25,6 +25,17 @@ const Event: React.FC<{
   }
   return (
     <Box>
+      <A href="/">
+        <Typography
+          variant="subtitle1"
+          sx={{
+            textAlign: 'left',
+            marginBottom: '24px',
+          }}
+        >
+          back
+        </Typography>
+      </A>
       <Typography
         variant="h4"
         sx={{
@@ -34,28 +45,26 @@ const Event: React.FC<{
       >
         { event.name }
       </Typography>
-      <A href="/">
-        <Typography
-          variant="subtitle1"
-          sx={{
-            textAlign: 'center',
-            marginBottom: '24px',
-          }}
-        >
-          home
-        </Typography>
-      </A>
       <Box sx={{
         height: '400px',
         backgroundImage: `url(${event.images[0]})`,
-        backgroundSize: 'contain',
         backgroundPosition: 'center',
       }}>
 
       </Box>
       <Grid container spacing={3}>
         <Grid item xs={ 12 } sm={ 6 }>
-            <Typography
+          <Typography
+            sx={{
+              marginTop: '24px',
+              marginBottom: '24px',
+            }}
+          >
+            { event.brief }
+          </Typography>
+        </Grid>
+        <Grid item xs={ 12 } sm={ 6 }>
+          <Typography
             sx={{
               marginTop: '24px',
               marginBottom: '24px',
@@ -65,6 +74,9 @@ const Event: React.FC<{
           </Typography>
         </Grid>
         <Grid item xs={ 12 } sm={ 6 }>
+          <Typography>
+            Where is this protest happening?
+          </Typography>
           <Box justifyContent="center" sx={{
             padding: '16px'
           }}>
@@ -73,37 +85,25 @@ const Event: React.FC<{
         </Grid>
       </Grid>
       <Grid container spacing={3}>
-      {
-        event.links.map((link, i) => (
-          <Grid item xs={ 12 } sm={ 4 }>
-            <Card sx={{ width: '100%' }}>
-              <a href={link.url}>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image={ link.image }
-                />
-              </a>
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  { link.name }
-                </Typography>
-              </CardContent>
-              <CardActions>
-                <Button
-                  size="small"
-                  onClick={ () => {
-                    window.location.href = link.url
-                  }}
-                >
-                  Learn More
-                </Button>
-              </CardActions>
-            </Card>
-          </Grid>
-        ))
-      }
-    </Grid>
+        {
+          event.links.map((link, i) => (
+            <Grid item xs={ 12 } sm={ 4 }>
+              <Card sx={{ width: '100%' }}>
+                <CardActions>
+                  <Button
+                    size="small"
+                    onClick={ () => {
+                      window.location.href = link.url
+                    }}
+                  >
+                    Learn More
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+          ))
+        }
+      </Grid>
     </Box>
   )
 }

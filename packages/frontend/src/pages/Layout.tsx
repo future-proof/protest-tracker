@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { navigate } from 'hookrouter'
+import { A, navigate } from 'hookrouter'
 import { styled, createTheme, ThemeProvider } from '@mui/material/styles'
 import CssBaseline from '@mui/material/CssBaseline'
 import MuiDrawer from '@mui/material/Drawer'
@@ -52,6 +52,7 @@ const AppBar = styled(MuiAppBar, {
   }),
 }))
 
+/*
 const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' })(
   ({ theme, open }) => ({
     '& .MuiDrawer-paper': {
@@ -77,6 +78,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
     },
   }),
 )
+*/
 
 const mdTheme = createTheme()
 
@@ -114,15 +116,18 @@ const Layout: React.FC<{
             >
               <MenuIcon />
             </IconButton> */}
-            <Typography
-              component="h1"
-              variant="h6"
-              color="inherit"
-              noWrap
-              sx={{ flexGrow: 1 }}
-            >
-              Protest Tracker
-            </Typography>
+            <A href="/">
+              <Typography
+                component="h1"
+                variant="h6"
+                color="white"
+                decoration="none"
+                noWrap
+                sx={{ flexGrow: 1 }}
+              >
+                Protest Tracker
+              </Typography>
+            </A>
           </Toolbar>
         </AppBar>
         {/* <Drawer variant="permanent" open={open}>
