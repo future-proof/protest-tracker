@@ -44,6 +44,7 @@ const Dashboard: React.FC = () => {
                   { event.brief }
                 </Typography>
               </CardContent>
+              
               <CardActions>
                 <Button
                   size="small"
@@ -54,6 +55,27 @@ const Dashboard: React.FC = () => {
                   Learn More
                 </Button>
               </CardActions>
+
+              <Grid container spacing={1}>
+                {
+                  event.categories.map((categories, i) => (
+                    <Grid item >
+                      <Button
+                        size="small"
+                        variant="contained"
+
+                        // This should open a view of all events filtered with that category (hide other events)
+                        onClick={ () => {
+                          window.location.href = categories.url
+                        }}
+                      >
+                       { categories }
+                      </Button>
+                    </Grid>
+                  ))
+                }
+              </Grid>
+
             </Card>
           </Grid>
         ))

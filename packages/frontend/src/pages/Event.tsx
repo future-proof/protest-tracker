@@ -98,26 +98,51 @@ const Event: React.FC<{
           </Box>
         </Grid>
       </Grid>
-      <Grid container spacing={3}>
+      
+
+
+      <Grid container spacing={4}>
         {
           event.links.map((link, i) => (
-            <Grid item xs={ 12 } sm={ 4 }>
-              <Card sx={{ width: '100%' }}>
-                <CardActions>
-                  <Button
-                    size="small"
-                    onClick={ () => {
-                      window.location.href = link.url
-                    }}
-                  >
-                    Learn More
-                  </Button>
-                </CardActions>
-              </Card>
+            <Grid item >
+              <Button
+                size="small"
+                
+                // needs to open in new window
+
+                onClick={ () => {
+                  window.location.href = link.url
+                }}
+              >
+               { link.name }
+              </Button>
             </Grid>
           ))
         }
       </Grid>
+      
+
+      <Grid container spacing={1}>
+        {
+          event.categories.map((categories, i) => (
+            <Grid item >
+              <Button
+                size="small"
+                variant="contained"
+
+                // This should open a view of all events filtered with that category (hide other events)
+                onClick={ () => {
+                  window.location.href = categories.url
+                }}
+              >
+               { categories }
+              </Button>
+            </Grid>
+          ))
+        }
+      </Grid>
+
+
     </Box>
   )
 }
