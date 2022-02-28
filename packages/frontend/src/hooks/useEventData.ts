@@ -5,7 +5,7 @@ import {
 
 /*
 {
-  "id": "",
+  "id": "", // generated guid
   "name": "",
   "location": {
     name: "",
@@ -27,7 +27,7 @@ import {
 
 const DATA: IEvent[] = [
   {
-    "id": "01",
+    "id": "c59ddf07-4cd1-4224-81dd-d950cbd5bebe",
     "name": "Stand with Ukraine",
     "location": {
       name: "london",
@@ -40,23 +40,19 @@ const DATA: IEvent[] = [
       {
         name: "The Guardian",
         url: "https://www.theguardian.com/world/2022/feb/26/we-want-more-sanctions-ukrainians-rally-in-london-and-across-uk"
-      },
-       {
-        name: "Google",
-        url: "https://www.google.com"
       }
     ],
     "images": [
       "https://i.guim.co.uk/img/media/6db65d9e788091755fc5d8d04ea221a0c2ee802a/0_183_3500_2101/master/3500.jpg?width=700&quality=85&auto=format&fit=max&s=1eaeccadadb109a4768c64941803296a",
     ],
-    "categories": ["war", "politics"]
+    "categories": ["war"]
   },
 
 
 
 
   {
-    "id": "02",
+    "id": "64988dc5-821b-4918-94e6-ccbea54ddefe",
     "name": "Kill The Bill",
     "location": {
       name: "UK",
@@ -78,7 +74,7 @@ const DATA: IEvent[] = [
 
 
   {
-    "id": "03",
+    "id": "c9696154-2a6a-4510-8a3e-63b92b1db4bf",
     "name": "Extinction Rebellion 2022",
     "location": {
       name: "Hyde Park, London",
@@ -115,9 +111,35 @@ const DATA: IEvent[] = [
     "categories": ["environment", "politics"]
   },
 
+  {
+    "id": "b762b888-2726-4435-b534-e9a9aab5ac81",
+    "name": "Cost Of Living Crisis",
+    "location": {
+      name: "UK",
+      googleMapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9932.623969866758!2d-0.1610892529778802!3d51.51035407416868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876054929181a85%3A0xd1af6c4f49b4bd0c!2sHyde%20Park!5e0!3m2!1sen!2suk!4v1645933820483!5m2!1sen!2suk"
+    },
+    "date": "2022-03-05",
+    "brief":"COST OF LIVING CRISIS. WE CAN’T PAY – FURTHER ACTION – 5TH MARCH",
+    "description": "3 THINGS THE TORIES CAN DO EASILY TO SLASH LIVING COSTS.      1. FREEZE ENERGY PRICES. GOVERNMENTS IN OTHER COUNTRIES HAVE TAKEN STEPS TO PROTECT THE PUBLIC BY CAPPING BILLS (FRANCE 4%), FREEZING PRICES (PORTUGAL) AND COVERING 80% OF EXCESS BILLS (DENMARK). IN NORWAY A PERMANENT WINDFALL TAX ENERGY COMPANIES OF 56% IS APPLIED ON TOP OF CORPORATION TAX. WHY NOT HERE? 2. INCREASE WAGES AND BENEFITS        REAL TERMS PAY AND PENSION CUTS (NURSES -5% (PENSIONS -4%) LEAVE MILLIONS UNABLE TO AFFORD THE BASICS. ENERGY PRICE RISES WILL PUSH MORE PEOPLE INTO FUEL POVERTY. THIS IS HAPPENING WHILE OIL AND GAS FIRMS POST RECORD PROFITS AND BOAST OF BUSINESS AS BEING LIKE A CASH MACHINE FOR SHAREHOLDERS.            3. INVEST IN LOW CARBON ENERGY. WE NEED A PUBLICLY OWNED RENEWABLE ENERGY SYSTEM THAT IS RUN FOR THE BENEFIT OF PEOPLE, NOT PRIVATE PROFIT AND SHAREHOLDERS. CURRENTLY 50% OF THE UK'S ENERGY IS RENEWABLE BUT ONLY 0.07% IS PUBLICLY OWNED! PUBLIC OWNERSHIP IN LOW CARBON TECHNOLOGIES WOULD LOWER BILLS AND POLLUTION, CREATE MILLIONS OF JOBS AND INCREASE ENERGY SECURITY.",
+    "links": [
+      {
+        name: "Website",
+        url: "https://thepeoplesassembly.org.uk/",
+      },
+      {
+        name: "Resources",
+        url: "https://thepeoplesassembly.org.uk/cost-of-living-crisis-we-cant-pay-resources/",
+      }
+    ],
+    "images": [
+      "https://thepeoplesassembly.org.uk/wp-content/uploads/2022/02/Cant-pay-5-march.png",
+    ],
+    "categories": ["society", "politics", "economy"]
+  },
+
 
   {
-    "id": "04",
+    "id": "4a50f06d-ffc4-46b4-83f7-74a5e466f5d8",
     "name": "Stand with Ukraine 2",
     "location": {
       name: "Downing Street, London",

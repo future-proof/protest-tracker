@@ -13,7 +13,7 @@ import useEventData from '../hooks/useEventData'
 const Dashboard: React.FC = () => {
 
 
-  // We need to split this into upcoming events and past events.
+  // We need to split this into upcoming events and past events. And order chronologically
 
   const data = useEventData()
   return (
@@ -44,7 +44,7 @@ const Dashboard: React.FC = () => {
                   { event.brief }
                 </Typography>
               </CardContent>
-              
+
               <CardActions>
                 <Button
                   size="small"
@@ -66,7 +66,7 @@ const Dashboard: React.FC = () => {
 
                         // This should open a view of all events filtered with that category (hide other events)
                         onClick={ () => {
-                          window.location.href = categories.url
+                          navigate(`#`)
                         }}
                       >
                        { categories }

@@ -132,7 +132,7 @@ const Event: React.FC<{
 
                 // This should open a view of all events filtered with that category (hide other events)
                 onClick={ () => {
-                  window.location.href = categories.url
+                  navigate(`#`)
                 }}
               >
                { categories }
